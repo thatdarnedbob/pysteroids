@@ -47,7 +47,7 @@ def main():
         for rock in asteroids:
             for shot in shots:
                 if rock.collides_with(shot):
-                    rock.kill()
+                    rock.split()
                     shot.kill()
 
         for rock in asteroids:
